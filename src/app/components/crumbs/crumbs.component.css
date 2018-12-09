@@ -1,0 +1,35 @@
+.bread {
+    width: 100%;
+    display: inline-block;
+    padding: 0.2rem 0
+}
+.bread ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bread ul li {
+    float: left;
+}
+
+.bread ul li a {
+    font-size: 0.75rem;
+    color: #777;
+    font-weight: 600;
+}
+
+.bread ul li span {
+    position: relative;
+    top: 2px;
+}
+
+.bread ul li:nth-last-child(1) a {
+    color: #4c365a;
+}
+
+.bread ul li:nth-child(1),
+.bread ul li:nth-child(1) span.fa,
+.bread ul li:nth-last-child(1) span.fa {
+    display: none;
+}

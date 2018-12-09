@@ -1,0 +1,42 @@
+.header-wrapper {
+    background-color: #312439;
+    height: 40px;
+}
+
+.logo {
+    margin-left: -15px;
+}
+
+.profiler {
+    padding: 13px 0;
+    font-size: 12px;
+}
+
+.logout, .profile {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.profile {
+    margin-right: 18px;
+}
+
+.profile img {
+    margin: -13px 0;
+    margin-right: 8px;
+}
+
+.profile .fa-caret-down {
+    
+    margin-left: 10px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255,255,255, 0.65);
+}
+
+.logout .fa-sign-out {
+    margin-right: 5px;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}

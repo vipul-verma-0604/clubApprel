@@ -1,0 +1,33 @@
+.add-template-wrapper {
+    background-color: #fff;
+    padding: 1.25rem 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-template-wrapper h3 {
+    margin-bottom: 1rem;
+    color: #4c365a;
+}
+
+.add-template-wrapper form label {
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.btn-add {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #eabb57;
+    color: #111;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-reset {
+    margin-left: 0.5rem;
+    background-color: #d0d0d0;
+    color: #111;
+    font-weight: 700;
+    border: none;
+}

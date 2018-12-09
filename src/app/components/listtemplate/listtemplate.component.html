@@ -1,0 +1,42 @@
+<div class="list-template-wrapper">
+  <div class="form-row">
+    <span>Show</span>
+    <div class="form-group col-md-1">
+      <select id="inputState" class="form-control">
+        <option selected>10</option>
+        <option>20</option>
+        <option>30</option>
+      </select>
+    </div>
+    <span>Enteries Per Page</span>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Template ID</th>
+        <th scope="col">Template Name</th>
+        <th scope="col">Template Type</th>
+        <th scope="col">Created On</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let l of list; let i = index">
+        <td>{{l.tempId}}</td>
+        <td>{{l.tempName}}</td>
+        <td>{{l.tempType}}</td>
+        <td>{{l.createOn}}</td>
+        <td style="width: 125px; display: table-cell;">{{l.status}}</td>
+        <td>
+          <div *ngIf="l.status == 'Active'">
+              <ui-switch size="small" [checked]="true" (change)="onChange($event, i)"></ui-switch>
+          </div>
+          <div *ngIf="l.status == 'InActive'">
+              <ui-switch size="small" [checked]="false" (change)="onChange($event, i)"></ui-switch>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

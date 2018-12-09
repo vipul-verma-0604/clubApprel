@@ -1,0 +1,26 @@
+<div class="sidebar-wrapper">
+  <ul class="sidebar" *ngIf="link == 'campaign'">
+    <li>
+      <a href="">Team Management</a>
+      <span class="fa fa-chevron-right"></span>
+      <ul class="sub-sidebar">
+        <li class="active"><a href="">View Templates</a></li>
+        <li class="no-border-bottom"><a href="">Create Templates</a></li>
+      </ul>
+    </li>
+    <li><a href="">Customer Segement Management</a><span class="fa fa-chevron-right"></span></li>
+    <li><a href="">Manage Campaigns</a><span class="fa fa-chevron-right"></span></li>
+  </ul>
+  <ul class="sidebar" *ngIf="link == 'config'">
+      <li>
+        <a href="">Help</a>
+        <span class="fa fa-chevron-right"></span>
+        <ul class="sub-sidebar">
+          <li class="active"><a href="">Tutorial</a></li>
+          <li class="no-border-bottom"><a href="">Change Password</a></li>
+        </ul>
+      </li>
+      <li><a href="">Profile</a><span class="fa fa-chevron-right"></span></li>
+      <li><a href="">About</a><span class="fa fa-chevron-right"></span></li>
+    </ul>
+</div>
